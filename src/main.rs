@@ -2,9 +2,7 @@ use std::time::Instant;
 use std::collections::HashMap;
 
 mod benchmarking;
-mod memo_ack;
-mod basic_ack;
-mod hyper_ack;
+mod ackermann_implementations;
 
 fn main() {
     let sample_size = 1000;
@@ -12,5 +10,5 @@ fn main() {
     let n = 8;
     let printing = false;
     
-    benchmarking::run_ack_function(hyper_ack::hyper_ack, "hyper_ack", 4, 100);
+    benchmarking::run_ack_function(ackermann_implementations::hyper_ack::hyper_ack, "hyper_ack", 4, 100);
 }
