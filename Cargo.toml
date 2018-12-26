@@ -2,5 +2,6 @@
 name = "rust_ack"
 version = "0.1.0"
 authors = ["noah <noah.kennedy.professional@gmail.com>"]
+edition = "2018"
 
 [dependencies]
